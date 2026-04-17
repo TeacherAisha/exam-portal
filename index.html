@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Test</title>
+</head>
+<body>
+
+<h2>Exam Instructions</h2>
+<p>Click start to begin your test.</p>
+
+<button onclick="startTest()">Start Test</button>
+
+<div id="test" style="display:none;">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScT06b1zSdNRgAQ9zQSL0Ev9LNnCmOCPjfWLeAUlR8xrS9cHA/viewform?usp=header?embedded=true"
+          width="100%" height="600"></iframe>
+</div>
+
+<script>
+function startTest() {
+  document.getElementById("test").style.display = "block";
+  document.documentElement.requestFullscreen();
+}
+</script>
+
+</body>
+</html>
